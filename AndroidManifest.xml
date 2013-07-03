@@ -4,8 +4,6 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-
-
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="8" />
@@ -28,6 +26,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity 
+            android:name="com.baidu.mapapi.search.PlaceCaterActivity" 
+            android:configChanges="orientation|keyboardHidden" 
+            android:theme="@android:style/Theme.NoTitleBar">  
+  
+		</activity> 
+		
     </application>
     
 <!--使用网络功能所需权限  -->  
@@ -60,7 +66,6 @@
 </uses-permission>  
 <uses-permission android:name="android.permission.ACCESS_GPS">                     
 </uses-permission>  
-
     
    <supports-screens
         android:anyDensity="true"
